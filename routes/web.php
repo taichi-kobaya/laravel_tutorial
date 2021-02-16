@@ -113,7 +113,7 @@ Route::group(['prefix' => 'student'], function () {
 Route::group(['prefix' => 'session'], function () {
     Route::get('index', [
         PracticeSessionController::class,
-        'index'
+        'index' /*これがコントローラーのメソッド名*/
     ])->name('session.index');
 
     Route::get('reset', [
